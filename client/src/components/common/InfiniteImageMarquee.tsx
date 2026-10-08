@@ -44,7 +44,7 @@ export const DEFAULT_RUNWAY_PHOTOS: RunwayPhoto[] = [
   },
   {
     id: 'rp-5',
-    url: '/images/runway/runway-vol2-dsc-0004.jpg',
+    url: '/images/runway/runway-vol2-dsc-0083.jpg',
     title: 'Synchronized Ramp Strides',
     collection: 'Brahmāstra Winner',
     tag: '1st Place',
@@ -72,7 +72,7 @@ export const DEFAULT_RUNWAY_PHOTOS: RunwayPhoto[] = [
   },
   {
     id: 'rp-9',
-    url: '/images/runway/runway-vol2-dsc-0020.jpg',
+    url: '/images/runway/runway-vol2-dsc-0090.jpg',
     title: 'Dramatic Stage Lighting Walk',
     collection: 'Chakravyuh Series',
     tag: 'Stage Sync',
@@ -138,7 +138,7 @@ export const EDITORIAL_LOOKBOOK_PHOTOS: RunwayPhoto[] = [
   },
   {
     id: 'elp-8',
-    url: '/images/runway/runway-vol2-dsc-0045.jpg',
+    url: '/images/runway/runway-vol2-dsc-0102.jpg',
     title: 'Grand Finale Group Exit',
     collection: 'National Fest Tour',
     tag: 'Runway Winner',

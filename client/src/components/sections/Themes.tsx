@@ -50,7 +50,7 @@ export const Themes: React.FC = () => {
       images: [
         '/images/shoots/shoot-20260403-sd0-8497.jpg',
         '/images/shoots/shoot-20260403-sd0-8500.jpg',
-        '/images/runway/runway-vol2-dsc-0015.jpg',
+        '/images/runway/runway-vol2-dsc-0088.jpg',
       ],
       motif: 'Geometric Linear Structure',
       badge: 'State Finalist Lookbook',
@@ -73,7 +73,7 @@ export const Themes: React.FC = () => {
       images: [
         '/images/shoots/shoot-20260403-sd0-8440.jpg',
         '/images/shoots/shoot-20260403-sd0-8441.jpg',
-        '/images/runway/runway-vol1-dsc-0025.jpg',
+        '/images/runway/runway-vol1-dsc-0024.jpg',
       ],
       motif: 'Jaali Geometric Lattice & Brocade',
       badge: 'Chiasma & Advita Podium Theme',
@@ -96,7 +96,7 @@ export const Themes: React.FC = () => {
       images: [
         '/images/shoots/shoot-20260403-sd0-8531.jpg',
         '/images/shoots/shoot-20260403-sd0-8532.jpg',
-        '/images/runway/runway-vol2-dsc-0040.jpg',
+        '/images/runway/runway-vol2-dsc-0098.jpg',
       ],
       motif: 'Asymmetrical Draped Contours',
       badge: 'Brahmastra Winner Theme',

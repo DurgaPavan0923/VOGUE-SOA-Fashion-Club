@@ -27,7 +27,7 @@ const REAL_HERO_SLIDES = [
     theme: 'Fluid Tailoring',
   },
   {
-    url: '/images/runway/runway-vol2-dsc-0004.jpg',
+    url: '/images/runway/runway-vol2-dsc-0083.jpg',
     tag: 'Stage Discipline',
     title: 'Spotlight Cadence & Poise',
     theme: 'High Fashion',

@@ -92,7 +92,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     description:
       'Curated concept walks focused on raising social awareness, celebrating Odishan handloom heritage, and pioneering sustainable fashion zero-waste draping methods.',
     highlights: ['Odishan Handloom Revivals', 'Sustainable Upcycling Walks', 'Conceptual Social Themes'],
-    image: '/images/runway/runway-vol2-dsc-0004.jpg',
+    image: '/images/runway/runway-vol2-dsc-0083.jpg',
     badge: 'Heritage & Ecology',
   },
   {

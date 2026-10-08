@@ -131,7 +131,7 @@ export const MOMENTS_DATA: MomentItem[] = [
     title: 'Spotlight Synchronized Formations',
     tagline: 'Stage Authority & Precision Strides',
     tag: 'Runway',
-    image: '/images/runway/runway-vol2-dsc-0004.jpg',
+    image: '/images/runway/runway-vol2-dsc-0083.jpg',
     category: 'Lookbook',
   },
   {
