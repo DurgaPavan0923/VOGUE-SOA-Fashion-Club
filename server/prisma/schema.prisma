@@ -1,0 +1,146 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Admin {
+  id           String   @id @default(uuid())
+  username     String   @unique
+  email        String   @unique
+  passwordHash String
+  role         String   @default("ADMIN")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("admins")
+}
+
+model Achievement {
+  id           String   @id @default(uuid())
+  title        String
+  position     String
+  institution  String
+  year         Int
+  category     String   @default("RUNWAY")
+  description  String?
+  badgeUrl     String?
+  isHighlight  Boolean  @default(false)
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([year, displayOrder])
+  @@index([isHighlight])
+  @@map("achievements")
+}
+
+model Event {
+  id              String   @id @default(uuid())
+  title           String
+  category        String   @default("RAMP_SHOW")
+  eventDate       DateTime
+  venue           String
+  description     String
+  registrationUrl String?
+  coverImageUrl   String?
+  status          String   @default("UPCOMING") // UPCOMING, COMPLETED, CANCELLED
+  displayOrder    Int      @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([status, eventDate])
+  @@map("events")
+}
+
+model GalleryItem {
+  id           String   @id @default(uuid())
+  title        String
+  category     String   @default("RUNWAY") // RUNWAY, EDITORIAL, BTS, WORKSHOP
+  themeId      String?
+  imageUrl     String
+  videoUrl     String?
+  isVideo      Boolean  @default(false)
+  aspectRatio  String   @default("3:4") // 3:4, 1:1, 16:9
+  isFeatured   Boolean  @default(false)
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  theme        Theme?   @relation(fields: [themeId], references: [id], onDelete: SetNull)
+
+  @@index([category, displayOrder])
+  @@index([themeId])
+  @@map("gallery_items")
+}
+
+model Theme {
+  id            String        @id @default(uuid())
+  slug          String        @unique
+  name          String
+  tagline       String
+  narrative     String
+  paletteTokens String        // JSON string of hex array
+  coverImageUrl String?
+  displayOrder  Int           @default(0)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  galleryItems  GalleryItem[]
+
+  @@map("themes")
+}
+
+model Member {
+  id           String   @id @default(uuid())
+  fullName     String
+  roleTitle    String
+  category     String   // FOUNDER, FACULTY, LEAD_MODEL, CORE
+  bio          String?
+  avatarUrl    String?
+  instagramUrl String?
+  displayOrder Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("members")
+}
+
+model Application {
+  id              String   @id @default(uuid())
+  fullName        String
+  regNumber       String
+  email           String
+  phone           String
+  branchYear      String
+  category        String   // RUNWAY_MODEL, STYLING, PR_BTS, DESIGN
+  heightFeet      String?
+  instagramHandle String?
+  portfolioUrl    String?
+  auditionSlot    String
+  status          String   @default("PENDING") // PENDING, SHORTLISTED, REJECTED
+  notes           String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([status, category])
+  @@index([regNumber])
+  @@map("applications")
+}
+
+model ContactMessage {
+  id        String   @id @default(uuid())
+  name      String
+  email     String
+  queryType String   @default("GENERAL") // GENERAL, SPONSORSHIP, INVITATION
+  subject   String?
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("contact_messages")
+}

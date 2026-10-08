@@ -1,0 +1,28 @@
+{
+  "name": "vogue-soa-fashion-club",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official Web Platform for VOGUE – SOA Fashion Club (SOA University, Bhubaneswar)",
+  "scripts": {
+    "setup": "npm --prefix server install && npm --prefix server run prisma:generate && npm --prefix server run prisma:push && npm --prefix server run prisma:seed && npm --prefix client install",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"magenta,cyan\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build && npm --prefix server run build",
+    "start": "node server/dist/index.js",
+    "seed": "npm --prefix server run prisma:seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "keywords": [
+    "vogue",
+    "soa-university",
+    "fashion-club",
+    "haute-couture",
+    "react",
+    "vite",
+    "express",
+    "prisma"
+  ],
+  "author": "GDGoC ITER",
+  "license": "MIT"
+}

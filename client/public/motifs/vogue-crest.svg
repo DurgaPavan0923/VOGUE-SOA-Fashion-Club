@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" />
+      <stop offset="50%" stop-color="#B89B5E" />
+      <stop offset="100%" stop-color="#827354" />
+    </linearGradient>
+  </defs>
+  <!-- Outer Gold Ring with Filigree Dots -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="6,3"/>
+  <circle cx="100" cy="100" r="84" fill="#0C0A0B" stroke="url(#goldGrad)" stroke-width="1.5"/>
+  
+  <!-- Royal Crown Motif -->
+  <path d="M75 60 L85 75 L100 52 L115 75 L125 60 L122 82 L78 82 Z" fill="url(#goldGrad)" opacity="0.9"/>
+  <circle cx="100" cy="50" r="3" fill="#F3E8D6"/>
+  <circle cx="75" cy="58" r="2.5" fill="#F3E8D6"/>
+  <circle cx="125" cy="58" r="2.5" fill="#F3E8D6"/>
+  
+  <!-- Stylized Monogram V -->
+  <text x="100" y="132" font-family="'Cormorant Garamond', 'Playfair Display', serif" font-size="52" font-weight="700" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="2">V</text>
+  
+  <!-- Subtext -->
+  <text x="100" y="152" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#EADBC4" text-anchor="middle" letter-spacing="4">SOA CLUB</text>
+  
+  <!-- Bottom Stars -->
+  <polygon points="100,162 102,166 107,166 103,169 105,173 100,170 95,173 97,169 93,166 98,166" fill="url(#goldGrad)"/>
+</svg>

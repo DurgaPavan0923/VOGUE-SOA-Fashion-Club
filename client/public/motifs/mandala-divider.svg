@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 60" width="100%" height="60">
+  <defs>
+    <linearGradient id="divGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B89B5E" stop-opacity="0" />
+      <stop offset="30%" stop-color="#B89B5E" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#D4AF37" stop-opacity="1" />
+      <stop offset="70%" stop-color="#B89B5E" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#B89B5E" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <!-- Thin Hairline Lines -->
+  <line x1="20" y1="30" x2="250" y2="30" stroke="url(#divGrad)" stroke-width="1"/>
+  <line x1="350" y1="30" x2="580" y2="30" stroke="url(#divGrad)" stroke-width="1"/>
+  
+  <!-- Center Mandala Flourish -->
+  <g transform="translate(300, 30)">
+    <!-- Outer Diamond -->
+    <polygon points="0,-18 18,0 0,18 -18,0" fill="none" stroke="#B89B5E" stroke-width="1"/>
+    <!-- Inner Petals -->
+    <circle cx="0" cy="0" r="8" fill="#171415" stroke="#D4AF37" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="3" fill="#B89B5E"/>
+    
+    <!-- Accent Dots -->
+    <circle cx="-32" cy="0" r="2" fill="#B89B5E"/>
+    <circle cx="32" cy="0" r="2" fill="#B89B5E"/>
+    <polygon points="-24,0 -20,-3 -20,3" fill="#D4AF37"/>
+    <polygon points="24,0 20,-3 20,3" fill="#D4AF37"/>
+  </g>
+</svg>
