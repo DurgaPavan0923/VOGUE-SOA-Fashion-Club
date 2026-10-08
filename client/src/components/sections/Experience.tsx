@@ -34,7 +34,7 @@ export const Experience: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading
-          kicker="Curated Dimensions"
+          kicker="The Experience"
           title="The VOGUE Experience"
           subtitle="An interactive 3D portfolio drum. At rest, collections sit in a ring around the VOGUE seal. Swipe or drag to browse through curated fashion presentations."
         />

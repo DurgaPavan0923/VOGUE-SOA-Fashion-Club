@@ -36,7 +36,7 @@ export const Home: React.FC = () => {
       <InfiniteImageMarquee
         direction="rtl"
         speed="normal"
-        eyebrow="LIVE RUNWAY PHOTO STREAM • CONTINUOUS MOTION"
+        eyebrow="The Runway Stream"
       />
 
       {/* 3. Editorial Statement Spread */}
@@ -65,7 +65,7 @@ export const Home: React.FC = () => {
         direction="ltr"
         speed="slow"
         photos={EDITORIAL_LOOKBOOK_PHOTOS}
-        eyebrow="COUTURE ARCHIVES • EDITORIAL LOOKBOOK STREAM"
+        eyebrow="The Couture Archives"
       />
 
       {/* 9. The VOGUE Experience (8 Dynamic Training Modules) */}

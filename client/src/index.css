@@ -80,6 +80,10 @@
     will-change: transform;
     transform: translateZ(0);
   }
+  .section-optimize {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 750px;
+  }
   .scrollbar-none {
     -ms-overflow-style: none;
     scrollbar-width: none;

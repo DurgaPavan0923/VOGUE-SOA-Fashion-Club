@@ -28,7 +28,7 @@ export const EventsSection: React.FC = () => {
     <section id="events" className="py-24 sm:py-32 bg-vogue-dark relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading
-          kicker="Calendar &amp; Gatherings"
+          kicker="The Calendar"
           title="Upcoming Runway &amp; Events"
           subtitle="Auditions, national festival galas, and bespoke styling workshops. Register to participate or attend live as an audience guest."
         />

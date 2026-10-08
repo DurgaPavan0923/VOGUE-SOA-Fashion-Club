@@ -112,7 +112,8 @@ export const Hero: React.FC = () => {
                     }
               }
               transition={{ duration: 6.5, ease: 'linear' }}
-              className="w-full h-full object-cover filter brightness-90 contrast-110"
+              className="w-full h-full object-cover object-center filter brightness-90 contrast-110 will-change-transform"
+              decoding="async"
               onError={(e) => {
                 // Fallback to primary photo if path error occurs
                 (e.target as HTMLImageElement).src = '/images/shoots/shoot-20260403-sd0-8440.jpg';

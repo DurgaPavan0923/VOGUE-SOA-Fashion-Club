@@ -48,7 +48,7 @@ export const WhyJoin: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionHeading
-          kicker="Value Proposition"
+          kicker="Why Join"
           title="Why Join VOGUE SOA"
           subtitle="Discover how becoming a part of our fashion collective elevates your personal grooming, stage presence, and career network."
         />
